@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body id="body">
+    <a><img id="planet-right"  src="images/mars.gif" alt="Mars gif"></a>
+    <div id="header">
+      <p id="header-title">Adrian Salgado Lopez's Portfolio</p>
+      <div>
+        <a href="https://www.linkedin.com/in/adriansalgadocsula/"><img id="header-img" src="images/linkedIn.gif" alt="LinkedIn"></a>
+        <a href="https://github.com/sa2urn"><img id="header-img"src="images/github.png" alt="GitHub"></a>    
+      </div>
+      <button id="greeting-button" onclick="showGreetings(this);">Greetings</button>
+      <a href="General Resume.pdf" download="General Resume.pdf" id="greeting-button">Resume</a>
+    </div> 
+    
+    <img id="planet-left" src="images/jupi2er.gif" alt="Jupiter gif">
+    <div id="section-title">Bio</div> 
+    <div id="section-bio">
+      <div id="bio-img-holder">
+        <img id="bio-img" src= "images/Lucy.jpg" alt="Pet image"/>
+        <p>My pet, her name is Lucy.</p>
+      </div> 
+      <div id="bio-text">  
+        <p>
+          Hello, my name is Adrian Salgado Lopez, my pronouns are he/him/his. I reside in Los Angeles and a student at California State University, Los Angeles.
+        </p>
+        <p>
+          I am a 2nd year, pursuing a bachelor's degree in Computer Science. I love learning and exploring all the possible careers in Computer Science, it excites me that I will
+          be pursuing a career of my own. 
+        </p>
+        <p>
+          Some field interests that I have are Computer Vision, Software development, Cybersercurity, and UI development.     
+        </p>
+      </div>
+    </div>
+    
+    <img id="planet-right" src="images/sa2urn.gif" alt="Saturn gif">
+    <div id="section-title">Projects</div>
+    <div id="section-project">
+      <div id="project-img-holder">
+        <p id="project-title">Discord Music Bot</p>
+        <img id="project-img" src="images/DiscordMusicBot.gif" alt="Gif"/>
+      </div>
+      <div id="project-text">
+        <a href="https://github.com/sa2urn/DiscordMusicBot"><img id="project-github-img"src="images/github.png" alt="GitHub"></a>
+        <p>Developed a discord bot with a command that takes a youtube video link and joins the user's voicechannel and starts playing audio from the video.</p>
+        <p>Created by using the following modules and packages: discord.js, node.js, ffmpeg-static, ytdl-core, and @discordjs/opus.</p> 
+      </div>
+    </div>
+    <div id="section-project">
+      <div id="project-img-holder">
+        <p id="project-title">Object Detection: Stop Sign</p>
+        <img id="project-img" src="images/ObjectDetectStopSign.gif" alt="Gif"/>
+      </div>
+      <div id="project-text">
+        <a href="https://github.com/sa2urn/ObjectDetectionStopSign"><img id="project-github-img"src="images/github.png" alt="GitHub"></a>
+        <p>Developed a script that can be used on videos and live videos to detect stop signs.</p>
+        <p>Created by using OpenCV 4.4.0 and python 3.8.3 on Ubunto 18.04.5.</p>
+      </div>
+    </div>
+    <div id="section-project">
+      <div id="project-img-holder">
+        <p id="project-title">Food Bank Website</p>
+        <img id="project-img" src="images/groupWebsite2.gif" alt="Gif"/>
+      </div>
+      <div id="project-text">
+        <a href="https://github.com/sa2urn/groupSPSWebsite"><img id="project-github-img"src="images/github.png" alt="GitHub"></a>
+        <p>Created by Adrian Salgado Lopez, Arlet Miranda, Ebenezer Mensah, and Oswaldo Escobedo.</p>
+        <p>A Food Bank resource website, that helps people find food banks/pantries nearby.</p>
+        <p>This website was created with HTML, CSS, JavaScript, Java, Google's Maps API, Google's Geo code API, and Google's translate API.</p>
+      </div>
+    </div> 
+    <img id="planet-left" src="images/nep2un.gif" alt="Neptune gif">
+    <div id=contact-section>
+      <p id="header-contact">Contact Me</p>
+      <form action="https://getform.io/f/73658043-d40b-4c05-80df-60770ec3fa15" method="POST">
+        <textarea name="name-input" id="name-box" placeholder="Full name" rows="1"></textarea>
+        <br>
+        <textarea name="email-input" id="email-box" placeholder="Email Address" rows="1"></textarea>
+        <br>
+        <textarea name="message-input" id="message-box" placeholder="Input message" rows="3"></textarea>
+        <br>
+        <button type="submit" id="submit-button">Submit</button>
+      </form>   
+    </div>
+  </body>
+</html>

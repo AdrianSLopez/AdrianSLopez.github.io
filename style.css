@@ -1,0 +1,197 @@
+#body {
+  background-image: url("images/space.jpg");
+  background-color: rgb(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  font-family: Verdana, sans-serif;
+  color: white;
+}
+
+
+#header {
+  text-align: center; 
+  height: 800px;
+  width: auto;
+}
+#header-title {
+  padding-top: 50px;
+  font-size: 60px;
+}
+#header-img {
+  height: 4%;
+  width: 4%;
+  user-select: none;
+  transition: 0.5s;
+}
+#header-img:hover {
+  animation: 5s;
+  height: 6%;
+  width: 6%;
+  user-select: none;
+  transition: 0.5s;
+}
+#greeting-button {
+  cursor: pointer;
+  border: 1px solid white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 20px;
+  margin: 100px 2% 0% 0%;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+#greeting-button:hover {
+  font-size: 18px;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+#greeting-container {
+  font-size: 25px;
+  padding-top: 40px;
+}
+#planet-left {
+  width: 10%;
+  height: 10%;
+  padding-left: 75px; 
+  user-select: none;
+}
+#planet-right {
+  width: 10%;
+  height: 10%;
+  padding-top: 50px;
+  margin-left: 1650px;
+  user-select: none;
+}
+#section-title {
+  font-size: 45px;
+  text-align: center;
+  padding-right: 50px;
+  margin-top: 75;
+  margin-bottom: 60px;
+  background-color: black;
+}
+#section-bio {  
+  width: 900px;
+  height: 450px;
+  margin: 0px auto 180px auto;
+  display: flex;
+  background-color: black;
+} 
+#bio-img-holder {
+  text-align: center;
+  width: 40%;  
+  margin-right: 100px;
+}
+#bio-img{
+  margin-top: 20px;
+  height: 70%;
+  width: auto;
+  user-select: none;
+}
+#bio-text {
+  width: 500px;
+  font-size: 20px;
+}
+#section-project {  
+  width: 1200px;
+  height: 500px;
+  margin: 0px auto 60px auto;
+  display: flex;
+  background-color: black;
+}
+#project-title {
+  font-size: 30px;
+}
+#project-img-holder {
+  text-align: center;
+  width: 50%;  
+  margin-right: 150px;
+}
+#project-img {
+  margin-top: 60px;
+  height: 60%;
+  width: auto;
+  border-radius: 20%;
+  user-select: none;
+}
+#project-github-img {
+  height: 18%;
+  width: 18%;
+  margin-left: 40%;
+  user-select: none;
+  transition: 0.2s;
+}
+#project-github-img:hover {
+  height: 20%;
+  width: 20%; 
+  margin-left: 40%;
+  transition: 0.2s;
+  user-select: none;
+}
+#project-text {
+  width: 600;
+  font-size: 20px;
+  padding-top: 100px;
+}
+
+#planet-servlet-text{
+  font-size: 20px;
+  text-align: center;
+}
+
+#contact-section {
+  background-color: black;
+  text-align: left;
+  margin:100px 20%;
+  padding-left: 10%;
+}
+#header-contact {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#name-box {
+  width: 80%;
+  resize: none;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+}
+#email-box {
+  width: 80%;
+  resize: none; 
+  margin-bottom: 20px;
+  padding: 5px 10px;  
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+}
+#message-box {
+  width: 80%;
+  margin-bottom: 20px;
+  font-size: 15px;
+  padding: 5px 10px;  
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+}
+#submit-button {
+  border: 1px solid white;
+  font-size: 15px;
+  text-align: center;
+  padding: 15px 20px;
+  background-color: transparent;
+  color: white;
+}
+#submit-button:hover {
+  border-radius: 6px;
+  cursor: pointer;
+}
