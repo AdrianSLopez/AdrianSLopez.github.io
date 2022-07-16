@@ -141,6 +141,11 @@
   color: #FFF07C;
 }
 
+#temp-unavailable {
+  color:darkgray;
+  text-align: center;
+}
+
 #project-text a:hover {
   font-size: 22px;
   transition: 0.2s;
