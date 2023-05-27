@@ -2,95 +2,167 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Adrian Salgado Lopez</title>
+
+    <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/fullpage.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"  crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
+    <link rel="stylesheet" href="style.css"/>
   </head>
 
   <body id="body">
-    <a><img id="planet-right"  src="images/mars.gif" alt="Mars gif"></a>
-    <div id="header">
-      <p id="header-title">Adrian Salgado Lopez's Portfolio</p>
-      <div>
-        <a href="https://www.linkedin.com/in/adriansalgadocsula/"><img id="header-img" src="images/linkedIn.gif" alt="LinkedIn"></a>
-        <a href="https://github.com/AdrianSLopez"><img id="header-img"src="images/github.png" alt="GitHub"></a>    
-      </div>
-      <button id="greeting-button" onclick="showGreetings(this);">Greetings</button>
-      <a href="Resume_Adrian_Salgado_Lopez.pdf" download="Resume_Adrian_Salgado_Lopez.pdf" id="greeting-button">Resume</a>
-      <p id="greeting-container"></p>
-    </div> 
-    
-    <img id="planet-left" src="images/jupi2er.gif" alt="Jupiter gif">
-    <div id="section-title">Bio</div> 
-    <div id="section-bio">
-      <div id="bio-img-holder">
-        <img id="bio-img" src= "images/Lucy.jpg" alt="Pet image"/>
-        <p>My pet, her name is Lucy.</p>
-      </div> 
-      <div id="bio-text">  
-        <p>
-          Hello, my name is Adrian Salgado Lopez, my pronouns are he/him/his. I reside in Los Angeles and a student at California State University, Los Angeles.
-        </p>
-        <p>
-          I am a 4th year, pursuing a bachelor's degree in Computer Science. I love learning and exploring all the possible careers in Computer Science, it excites me that I will
-          be pursuing a career of my own. 
-        </p>
-        <p>
-          I am interested in 2023 new grad positions in Software Engineer and Cybersecurity.
-        </p>
+    <div id="fullpage">
+        <div class="section">
+          <div><img id="saturn" src="images/sa2urn.gif" alt="Saturn gif"></div>
+          <div id="intro">
+              <div id="intro-title"> <p>Adrian Salgado Lopez</p> </div>
+              <div id="intro-subtitle"> <p>Software Engineer | CSULA 23 Alumni | Bachelors in Computer Science</p> </div>
+              <div id="intro-links">
+                  <div>
+                      <a href="https://www.linkedin.com/in/adriansalgadocsula/"><img id="intro-img-linkedIn" src="images/linkedIn.gif" alt="LinkedIn"></a>
+                      <a href="https://github.com/AdrianSLopez"><img id="intro-img-github"src="images/github.gif" alt="GitHub"></a>
+                      <a href="https://github.com/AdrianSLopez"><img id="intro-img-hackerrank"src="/images/hackerank.png" alt="Hackerank"></a>
+                  </div>
+              </div>
+              <div class="intro-buttons">
+                  <a class="intro-button" onclick="showGreetings(this);">Greetings</a>
+                  <a href="Resume_Adrian_Salgado_Lopez.pdf" download="Resume_Adrian_Salgado_Lopez.pdf" class="intro-button">Resume</a>
+                  <p id="greeting-text"></p>
+              </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="bio-title">Bio</div>
+          <div class="bio-content">
+            <div class="bio-left-img">
+              <div class="bio-img-container"><img src= "images/Lucy.jpg" alt="Pet image"/></div>
+              <div id="bio-img-caption"><p>Lucy</p></div>
+            </div>
+            <div id="bio-right-text">  
+                <p>
+                  My name is Adrian Salgado Lopez and I graduated from Cal State LA with a bachelor's degree in Computer Science,
+                  this Spring 2023.
+                </p>
+                <p>
+                    I am no stranger when it comes to working in a team, programming, and learning new technologies- my whole school career was all about that.
+                    Using tools such as git and github to keep track of code, communication applications like discord & zoom to communicate with my teammates, google docs to write
+                    down any documentation needed, and jira to keep track of project tasks.
+                </p>
+                <p>
+                  I am looking to start my career at any organization that would allow me to not only use my problem solving skills but also allow me to keep on learning
+                  through organizational needs, whether that is developing new software or maintaining existing programs. No matter, all I want to do is to develop applications that are helpful to anyone
+                </p>
+            </div>
+          </div>
+          <div class="mars-container"><img id="mars" src="images/mars.gif" alt="mars gif"></div>
+        </div>
+        <div class="section">
+          <div class="slide">
+            <div class="project-title">Projects</div>
+            <div class="project-cards-container">
+              <div class="project-card" id="qtc-card">
+                <div class="project-card-img-container"><img src="images/qtc_dashboard.gif" alt="QTC Dashboard"></div>
+                <div class="project-card-title"><a href="https://github.com/dabizdev/QTC-Dashboard">Senior Capstone Project </a></div>
+                <div class="project-card-subtitle">Frontend Software Engineer Lead</div>
+                <div class="project-card-description">
+                  <p>QTC Dashboard - single location to display errors from different locations</p>
+                  <p>Ensured all QTC UI/UX Standards were met during development aswell as keep track of all front end needs that needed to be met.</p>
+                  <p>Implemented all dashboard style, table functionality, & fix frontend and backend bugs.</p>
+                  <p>Tools used: HTML, CSS, Bootstrap, Jquery, ASP.NET, C#</p>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-card-img-container"><img src="images/foodbank_website.gif" alt="QTC Dashboard" id="foodbank-gif"></div>
+                <div class="project-card-title"><a href="https://github.com/sa2urn/groupSPSWebsite">Foodbanks of America</a></div>
+                <div class="project-card-subtitle">Frontend Software Engineer</div>
+                <div class="project-card-description">
+                  <p>Foodbank resource website to help people find pantries or foodbanks nearby.</p>
+                  <p>Implemented search bar that accepts user input to properly reposition the map to user's location to view nearby food pantries.</p>
+                  <p>Tools used: HTML, CSS, Jquery, & Googles' Places, Map, Geocoding API, </p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="slide">
+            <div class="project-title">Projects</div>
+            <div class="project-cards-container">
+              <div class="project-card" id="qtc-card">
+                <div class="project-card-img-container"><img src="images/ObjectDetectStopSign.gif" alt="QTC Dashboard"></div>
+                <div class="project-card-title"><a href="https://github.com/sa2urn/ObjectDetectionStopSign">Stop Sign detection</a></div>
+                <div class="project-card-description">
+                  <p>Object detection script that can be used on videos and live videos to detect stop signs.</p>
+                  <p>Model was trained using OpenCv with a dataset of ~250 images.</p>
+                  <p>Tools used: Python, OpenCV, Ubuntu, VMware Workstation,</p>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-card-img-container"><img src="images/DiscordMusicBot.gif" alt="QTC Dashboard" id="foodbank-gif"></div>
+                <div class="project-card-title"><a href="https://github.com/AdrianSLopez/DiscordMusicBot">Discord Music bot</a></div>
+                <div class="project-card-description">
+                  <p>Discord music bot that can be added to a server and can join a voice channel and play any youtube video given the right command and valid youtube link.
+                  </p>
+                  <p>Tools used: Visual Studio Code, Javascript, Node.js</p> 
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="section">
+          <div class="class-title">Class Assignments/Projects</div>
+          <div class="class-contents">
+            <div class="class-course">
+              <div class="class-course-name">CS 4660 - Artificial Intelligence</div>
+              <div class="class-assignment">
+                <div class="class-assignment-title"><a href="https://github.com/AdrianSLopez/Assignment-A">Assignment A:  Search Algorithms</a></div>
+                <div class="class-assignment-description">Implement Breadth First Search, Depth First Search, and A-Star algorithms to solve N puzzles (3x3).</div>       
+              </div>
+              <div class="class-assignment">
+                <div class="class-assignment-title"><a href="https://github.com/AdrianSLopez/Assignment-B">Assignment B: Tic-tac-toe - best move for X</a></div>
+                <div class="class-assignment-description">Implement Minimax algorithm for tic-tac-toe, more specifically implement to find the best move for X.</div>       
+              </div>
+
+              <div class="class-assignment">
+                <div class="class-assignment-title"><a href="https://github.com/AdrianSLopez/Assignment-C">Assignment C: Sudoku Solver</a></div>
+                <div class="class-assignment-description">Implement Arc Consistency 3 algorithm to solve suduko games</div>       
+              </div>
+              
+              <div class="class-assignment-tools">Tools used: Visual Studio Code, Python</div>   
+            </div>
+            <div class="class-course">
+              <div class="class-course-name">CS 4220 - Current Trends in Web Design</div>
+              <div class="class-assignment">
+                <div class="class-assignment-title"><a href="https://github.com/AdrianSLopez/CS-4220-Midterm">Midterm: Command Line Interface that interacts with an API</a>    -   <a href="https://drive.google.com/file/d/1NHr6YOqrnsNgbzsukHWagVqr3D32LxwP/view?usp=sharing">DEMO</a> </div>
+                <div class="class-assignment-description">Created a CLI that interacts with a spotify API, able to retreive list of songs and song info from API.</div>       
+              </div>
+
+              <div class="class-assignment">
+                <div class="class-assignment-title"><a href="https://github.com/AdrianSLopez/CS-4220-FInal">Final: Stateless Server application that interacts with API & Database</a>    -   <a href="https://drive.google.com/file/d/1EicnJQnGfg6p61-3cOhCRCetu8x61aJs/view?usp=sharing">DEMO</a> </div>
+                <div class="class-assignment-description">Stateless server application that interacts with same API from midterm but also incoporates Mongo database.</div>       
+              </div>
+
+              <div class="class-assignment-tools">Tools used: JavaScript, Node.js, Mongo Database, Postman </div>   
+            </div>
+          </div>
+          <div class="neptune-container"><img src="images/nep2un.gif" alt="mars gif"></div>
+        </div>
       </div>
     </div>
-    
-    <img id="planet-right" src="images/sa2urn.gif" alt="Saturn gif">
-    <div id="section-title">Projects</div>
-    <div id="section-project">
-      <div id="project-img-holder">
-        <p id="project-title">Discord Music Bot</p>
-        <img id="project-img" src="images/DiscordMusicBot.gif" alt="Gif"/>
-      </div>
-      <div id="project-text">
-        <a href="https://github.com/sa2urn/DiscordMusicBot"><img id="project-github-img"src="images/github.png" alt="GitHub"></a>
-        <p>Developed a discord bot with a command that takes a youtube video link and joins the user's voicechannel and starts playing audio from the video.</p>
-        <p>Created by using the following modules and packages: discord.js, node.js, ffmpeg-static, ytdl-core, and @discordjs/opus.</p> 
-      </div>
-    </div>
-    <div id="section-project">
-      <div id="project-img-holder">
-        <p id="project-title">Object Detection: Stop Sign</p>
-        <img id="project-img" src="images/ObjectDetectStopSign.gif" alt="Gif"/>
-      </div>
-      <div id="project-text">
-        <a href="https://github.com/sa2urn/ObjectDetectionStopSign"><img id="project-github-img"src="images/github.png" alt="GitHub"></a>
-        <p>Developed a script that can be used on videos and live videos to detect stop signs.</p>
-        <p>Created by using OpenCV 4.4.0 and python 3.8.3 on Ubunto 18.04.5.</p>
-      </div>
-    </div>
-    <div id="section-project">
-      <div id="project-img-holder">
-        <p id="project-title">Food Bank Website</p>
-        <img id="project-img" src="images/groupWebsite2.gif" alt="Gif"/>
-      </div>
-      <div id="project-text">
-        <a href="https://github.com/sa2urn/groupSPSWebsite"><img id="project-github-img"src="images/github.png" alt="GitHub"></a>
-        <p id="temp-unavailable">Temporary unavailable</p>
-        <p>Created by Adrian Salgado Lopez, Arlet Miranda, Ebenezer Mensah, and Oswaldo Escobedo.</p>
-        <p>A Food Bank resource <a href="https://spring21-sps-42.appspot.com/">website</a>, that helps people find food banks/pantries nearby.</p>
-        <p>This website was created with HTML, CSS, JavaScript, Java, Google's Maps API, Google's Geo code API, and Google's translate API.</p>
-      </div>
-    </div> 
-    <img id="planet-left" src="images/nep2un.gif" alt="Neptune gif">
-    <div id=contact-section>
-      <p id="header-contact">Contact Me</p>
-      <form action="https://getform.io/f/73658043-d40b-4c05-80df-60770ec3fa15" method="POST">
-        <textarea name="name-input" id="name-box" placeholder="Full name" rows="1"></textarea>
-        <br>
-        <textarea name="email-input" id="email-box" placeholder="Email Address" rows="1"></textarea>
-        <br>
-        <textarea name="message-input" id="message-box" placeholder="Input message" rows="3"></textarea>
-        <br>
-        <button type="submit" id="submit-button">Submit</button>
-      </form>   
-    </div>
+
+
+    <script type="text/javascript" src="/node_modules/fullpage.js/dist/fullpage.extensions.min.js"></script>
+    <script type="text/javascript">
+        new fullpage('#fullpage', {
+            navigation: true,
+            navigationPosition: 'left',
+            navigationTooltips: ['Home', 'Bio', 'Projects', 'Class Assignments'],
+            showActiveTooltip: true
+        });
+    </script>
   </body>
 </html>
