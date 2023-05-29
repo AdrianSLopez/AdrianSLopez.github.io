@@ -240,9 +240,10 @@
   background: white;
 }
 .fp-arrow.fp-prev {
-  /* margin-top: 5%; */
+  margin-top: -7%;
   margin-left: 2%;
 }
 .fp-arrow.fp-next {
+  margin-top: -7%;
   margin-right: 2%;
 }
