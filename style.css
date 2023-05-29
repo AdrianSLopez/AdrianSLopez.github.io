@@ -235,6 +235,10 @@
   padding-top: 1%;
 }
 
+#neptune {
+  width: 16%;
+}
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: white;
