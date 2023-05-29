@@ -118,12 +118,14 @@
   margin-left: 10%;
 }
 .bio-img-container {
-  width: 400px;
-  height: 500px;
+  width: 360px;
+  height: 450px;
+  border-radius: 5%;
 }
 .bio-img-container img{
   width: 100%;
   height: 100%;
+  border-radius: 5%;
   user-select: none;
 }
 #bio-img-caption{
