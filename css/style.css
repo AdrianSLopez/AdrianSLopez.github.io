@@ -193,7 +193,6 @@
 .project-card-title a {
   transition: 0.5s;
   text-decoration: underline;
-  border-bottom: 100px;
   font-weight:300;
   color: wheat;
 }
@@ -204,6 +203,7 @@
   text-decoration: none;
   color:antiquewhite;
   font-size: 28px;
+  font-weight:100;
 }
 .project-card-subtitle {
   background-color: black;
@@ -239,6 +239,18 @@
  margin-left: 2%;
  background-color: black;
 }
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: white;
+}
+.fp-arrow.fp-prev {
+  margin-top: -8%;
+  margin-left: 10%;
+}
+.fp-arrow.fp-next {
+  margin-top: -8%;
+  margin-right: 10%;
+}
 
 .class-title {
   text-align: center;
@@ -264,6 +276,20 @@
 .class-assignment-title {
   font-size: 20px;
 }
+
+.class-assignment-title a{
+  color: wheat;
+  font-weight: 300;
+  transition: 0.5s;
+}
+.class-assignment-title a:hover{
+  transition: 0.5s;
+  animation: 5s;
+  text-decoration: none;
+  color:antiquewhite;
+  font-size: 24px;
+  font-weight:100;
+}
 .class-assignment-description, .class-assignment-tools {
   padding-left: 1%;
 }
@@ -273,19 +299,6 @@
 
 #neptune {
   width: 15%;
-}
-
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  background: white;
-}
-.fp-arrow.fp-prev {
-  margin-top: -8%;
-  margin-left: 10%;
-}
-.fp-arrow.fp-next {
-  margin-top: -8%;
-  margin-right: 10%;
 }
 
 .fp-watermark {
