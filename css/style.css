@@ -169,6 +169,7 @@
 }
 #qtc-card {
   padding-right: 5%;
+  text-align: left;
 }
 .project-card-img-container {
   width: 625px;
@@ -184,24 +185,59 @@
 }
 .project-card-title {
   background-color: black;
+  margin-top: 1%;
   font-size: 25px;
+  z-index: 1;
+  margin-bottom: 2%;
+}
+.project-card-title a {
+  transition: 0.5s;
+  text-decoration: underline;
+  border-bottom: 100px;
+  font-weight:300;
+  color: wheat;
+}
+
+.project-card-title a:hover {
+  transition: 0.5s;
+  animation: 5s;
+  text-decoration: none;
+  color:antiquewhite;
+  font-size: 28px;
 }
 .project-card-subtitle {
   background-color: black;
   font-size: 16px;
   font-style: italic;
   color: darkgrey;
-  margin-top: -1%;
+  margin-top: -2.5%;
   margin-bottom: 2%;
-  padding-left: 1% ;
+  padding-left: 2% ;
 }
-.project-card-description {
-  margin-top: 1%;
+.project-card-description-subtitle {
+  margin-top: -0.25%;
   background-color: black;
-  text-align: left;
+  color:wheat;
   font-size: 19px;
+  z-index: 1;
+}
+.project-card-description-text {
+  margin-top: -2%;
+  margin-left: 2%;
+  background-color: black;
+  font-size: 18px;
   width: 625px;
-
+}
+.project-card-tools-subtitle {
+  font-size: 19px;
+  margin-top: -1.5%;
+  color:wheat;
+  padding-left: 0.25%;
+  background-color: black;
+}
+.project-card-tools-text {
+ margin-left: 2%;
+ background-color: black;
 }
 
 .class-title {
@@ -244,12 +280,12 @@
   background: white;
 }
 .fp-arrow.fp-prev {
-  margin-top: -7%;
-  margin-left: 2%;
+  margin-top: -8%;
+  margin-left: 10%;
 }
 .fp-arrow.fp-next {
-  margin-top: -7%;
-  margin-right: 2%;
+  margin-top: -8%;
+  margin-right: 10%;
 }
 
 .fp-watermark {
