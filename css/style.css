@@ -1,5 +1,5 @@
 #body {
-  background-image: url("images/space.jpg");
+  background-image: url("../images/space.jpg");
   background-color: rgb(0, 0, 0, 0.6);
   background-blend-mode: multiply;
   font-family: 'Varela Round', sans-serif;
