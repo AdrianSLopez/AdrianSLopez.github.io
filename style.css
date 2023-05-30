@@ -236,7 +236,7 @@
 }
 
 #neptune {
-  width: 16%;
+  width: 15%;
 }
 
 #fp-nav ul li a span,
@@ -250,4 +250,8 @@
 .fp-arrow.fp-next {
   margin-top: -7%;
   margin-right: 2%;
+}
+
+.fp-watermark {
+  display: none;
 }
