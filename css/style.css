@@ -102,6 +102,9 @@
 }
 
 
+.mars-container-mobile {
+  display: none;
+}
 .bio-title {
   background-color: black;
   font-size: 65px;
@@ -239,6 +242,9 @@
  margin-left: 2%;
  background-color: black;
 }
+#project-section-mobile {
+  display: none;
+}
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: white;
@@ -276,7 +282,6 @@
 .class-assignment-title {
   font-size: 20px;
 }
-
 .class-assignment-title a{
   color: wheat;
   font-weight: 300;
@@ -299,6 +304,9 @@
 
 #neptune {
   width: 15%;
+}
+#neptune-container-mobile{
+  display: none;
 }
 
 .fp-watermark {
